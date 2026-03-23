@@ -1,4 +1,4 @@
-class QuantityMeasurementApp_UC10 {
+class QuantityMeasurementApp {
     static <T extends IMeasurable> void show(double v, T f, T t) {
         System.out.printf("%.2f %s = %.6f %s%n", v, f.getUnitName(), Quantity.convert(v, f, t), t.getUnitName());
     }
